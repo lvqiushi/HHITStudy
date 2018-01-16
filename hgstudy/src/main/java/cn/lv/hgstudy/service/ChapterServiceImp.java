@@ -50,7 +50,7 @@ public class ChapterServiceImp implements ChapterService{
 	 */
 	public boolean editChapterInfor(Chapter chapter) {
 		// TODO Auto-generated method stub
-		return false;
+		return chdao.editChapterInfor(chapter);
 	}
 
 	/* (non-Javadoc)
@@ -58,7 +58,7 @@ public class ChapterServiceImp implements ChapterService{
 	 */
 	public boolean deleteChapterById(int chapterid) {
 		// TODO Auto-generated method stub
-		return false;
+		return chdao.deleteChapterById(chapterid);
 	}
 
 	/* (non-Javadoc)
@@ -66,7 +66,7 @@ public class ChapterServiceImp implements ChapterService{
 	 */
 	public boolean addChapter(Chapter chapter) {
 		// TODO Auto-generated method stub
-		return false;
+		return chdao.addChapter(chapter);
 	}
 
 }

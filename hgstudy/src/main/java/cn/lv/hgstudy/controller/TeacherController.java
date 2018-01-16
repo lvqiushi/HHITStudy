@@ -16,7 +16,11 @@ import javax.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
+
+
+import cn.lv.hgstudy.common.JsonResult;
 import cn.lv.hgstudy.common.Page;
 import cn.lv.hgstudy.dao.CourseDao;
 import cn.lv.hgstudy.dao.TeacherDao;
@@ -25,6 +29,7 @@ import cn.lv.hgstudy.pojo.Teacher;
 import cn.lv.hgstudy.service.ChapterService;
 import cn.lv.hgstudy.service.CourseService;
 import cn.lv.hgstudy.service.TeacherService;
+import cn.lv.hgstudy.util.BASE64Encode;
 
 /** 
  * @ClassName: TeacherController 
@@ -141,6 +146,22 @@ public class TeacherController {
 		List chapters = chapterService.selectChaptersByCouId(couid);
 		model.addAttribute("chapters", chapters);
 		return "edit_course";
+	}
+	
+	@RequestMapping(value = "/toEditCourseIndex")
+    public String toEditCourseIndex(Model model,String couid){
+		model.addAttribute("couid", couid);
+		return "edit_course_index";
+	}
+	
+	
+	@RequestMapping(value = "/editHeader")
+	@ResponseBody
+    public JsonResult editHeader(Model model,String img,String teaid){
+		tercherService.editTeaHeader(img,teaid);	
+		JsonResult result = new JsonResult();
+		result.setMessage("修改头像成功");
+		return result;
 	}
 	
 
