@@ -8,14 +8,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import cn.lv.hgstudy.service.CourseService;
-import cn.lv.hgstudy.service.CourseServiceImp;
+import cn.lv.hgstudy.service.impl.CourseServiceImpl;
 
 @Controller
 public class IndexController {
 
-	@Resource
-	CourseServiceImp courseService;
+	@Resource CourseServiceImpl courseService;
 	
 	@RequestMapping(value = "/index")
     public String index(Model model){

@@ -49,7 +49,7 @@ public class TeacherController {
     /**
      * 
      * @Title: showTeacherInfor 
-     * @Description: TODO(跳转到教师信息页面) 
+     * @Description: 跳转到教师信息页面
      * @param teaid  教师号
      * @param model
      * @return String 教师信息页面 
@@ -68,7 +68,7 @@ public class TeacherController {
 	/**
 	 * 
 	 * @Title: managerTeacherInfor 
-	 * @Description: TODO(跳转到教师个人中心页面) 
+	 * @Description: 跳转到教师个人中心页面
 	 * @param model
 	 * @param session   
 	 * @return String     
@@ -85,7 +85,7 @@ public class TeacherController {
 	/**
 	 * 
 	 * @Title: showTeachercCourse 
-	 * @Description: TODO(跳转到教师下的课程列表页面) 
+	 * @Description: 跳转到教师下的课程列表页面
 	 * @param model
 	 * @param session
 	 * @param curpage
@@ -106,7 +106,7 @@ public class TeacherController {
 	/**
 	 * 
 	 * @Title: showTeachercCourse 
-	 * @Description: TODO(跳转到编辑教师信息页面) 
+	 * @Description: 跳转到编辑教师信息页面
 	 * @param model
 	 * @param teaid
 	 * @return String     

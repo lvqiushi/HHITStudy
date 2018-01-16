@@ -47,7 +47,7 @@ public class TestDao {
 			System.out.println(cou.getCouName());
 		}
 		
-		Course cou1 = cdao.selectCourseById(1);
+		Course cou1 = cdao.selectCourseById("1");
 		System.out.println("the new ");
 		System.out.println(cou1.getCouName());
 		System.out.println(cou1.getTea().getTeaName());

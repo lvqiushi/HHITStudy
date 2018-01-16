@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.spring</groupId>
-  <artifactId>spitter</artifactId>
+  <artifactId>hhit-study</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>spitter Maven Webapp</name>
+  <name>hhit-web-study</name>
   <url>http://maven.apache.org</url>
   
   
@@ -137,7 +137,7 @@
   </dependencies>
   
   <build>
-    <finalName>spitter</finalName>
+    <finalName>hhit-study</finalName>
 
     <plugins>
 	    <plugin>

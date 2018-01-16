@@ -14,7 +14,7 @@ import cn.lv.hgstudy.pojo.Chapter;
 
 /** 
  * @ClassName: ChapterService 
- * @Description: TODO(这里用一句话描述这个类的作用) 
+ * @Description:
  * @author lv
  * @date 2017年9月15日 下午2:24:25 
  *  

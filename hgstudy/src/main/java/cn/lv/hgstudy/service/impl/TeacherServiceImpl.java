@@ -6,10 +6,11 @@
  * @date 2017年9月13日 下午7:28:50 
  * @version V1.0   
  */
-package cn.lv.hgstudy.service;
+package cn.lv.hgstudy.service.impl;
 
 import javax.annotation.Resource;
 
+import cn.lv.hgstudy.service.TeacherService;
 import org.springframework.stereotype.Service;
 
 import cn.lv.hgstudy.dao.TeacherDao;
@@ -23,7 +24,7 @@ import cn.lv.hgstudy.pojo.Teacher;
  *  
  */
 @Service
-public class TeacherServiceImp implements TeacherService{
+public class TeacherServiceImpl implements TeacherService {
 	@Resource
 	TeacherDao tdao;
 	

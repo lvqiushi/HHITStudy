@@ -13,7 +13,6 @@ public interface ChapterDao {
 	boolean deleteChapterById(int chapterid);
 	
 	boolean addChapter(Chapter chapter);
-	
-	//���ݿγ�ID����ɾ����
+
 	//boolean deleteChaptersByCouid(int couid);
 }
